@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc",
+    "module": "reflection-rewriter-runtime",
+    "version": "0.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.checkerframework",
+          "module": "checker-qual",
+          "version": {
+            "requires": "3.43.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reflection-rewriter-runtime-0.0.3.jar",
+          "url": "reflection-rewriter-runtime-0.0.3.jar",
+          "size": 13379,
+          "sha512": "38bc1b89d78c505db7847eea6e32e754eefc4bb142236ed08b76ac84ca4ed93f266cd88b4268e71e06106724ba239667fe0e17da06962b2487fb4504da545a35",
+          "sha256": "61e066c3eb6f164ef65a73af4dcd95d3a0caeefea261606be6f9034a715ee8e5",
+          "sha1": "e5cf62b00514dd6190b0dec0a0a7321ed436bf8b",
+          "md5": "c7a86d5c22df9103b2855febacae311e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-runtime-0.0.3.jar",
+          "url": "reflection-rewriter-runtime-0.0.3.jar",
+          "size": 13379,
+          "sha512": "38bc1b89d78c505db7847eea6e32e754eefc4bb142236ed08b76ac84ca4ed93f266cd88b4268e71e06106724ba239667fe0e17da06962b2487fb4504da545a35",
+          "sha256": "61e066c3eb6f164ef65a73af4dcd95d3a0caeefea261606be6f9034a715ee8e5",
+          "sha1": "e5cf62b00514dd6190b0dec0a0a7321ed436bf8b",
+          "md5": "c7a86d5c22df9103b2855febacae311e"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-runtime-0.0.3-javadoc.jar",
+          "url": "reflection-rewriter-runtime-0.0.3-javadoc.jar",
+          "size": 98218,
+          "sha512": "ed97cc136cf111bf4b6512209c83942fc002af9605e96ef86d2396f5d9a17128deb382c5f4b0dea8f5a61980ddac8e0888dbd9a427629b86936d2417dd4a8cce",
+          "sha256": "f9c75e0e440e4fb84f20b7186c01e76bfe5db346672551002738bfd2827742e8",
+          "sha1": "d7dd23e8c2c4f4a02c7db449eacb084f04841023",
+          "md5": "941617767a10b63cd3478de4ecc5c1c8"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-runtime-0.0.3-sources.jar",
+          "url": "reflection-rewriter-runtime-0.0.3-sources.jar",
+          "size": 7539,
+          "sha512": "44aa0b87e88656c6f49634ec60776ed8246a1d90fbe754ab2853c243157ec1be09368cab9198bc4eac6e764db3c3f23e5d335f7cabd55fd25d1ee2056eacc37c",
+          "sha256": "aec2525e5c66eef15037f7b57c8f6317708bdf905f6c42bac48beb80aa8290c7",
+          "sha1": "db8ac0339f215fd8dc938d88c362de33c74051cc",
+          "md5": "fe1c3da02baceaceb8d559ea713a5dd2"
+        }
+      ]
+    }
+  ]
+}

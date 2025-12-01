@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.velocitypowered",
+    "module": "velocity-native",
+    "version": "3.4.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "velocity-native-3.4.0-SNAPSHOT.jar",
+          "url": "velocity-native-3.4.0-SNAPSHOT.jar",
+          "size": 237118,
+          "sha512": "b7d11827db10a28d4605e743a0bdbe2238973fa761eebf2dcd5974e2acda97e1def55d262c6b712b30704af0905972d09feff7d26ef94518c56609dbf59719e9",
+          "sha256": "172cea51c56055b58998ef4c44d807b9cf693660c09cf6fd8b8032197709a436",
+          "sha1": "a9f5a1baf48e01cc5246cd3dee6292cfffde44ad",
+          "md5": "da5cdb172b1df728ad22dda38bedf7c2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "25.1-jre"
+          }
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-handler",
+          "version": {
+            "requires": "4.2.7.Final"
+          }
+        },
+        {
+          "group": "org.checkerframework",
+          "module": "checker-qual",
+          "version": {
+            "requires": "3.42.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "velocity-native-3.4.0-SNAPSHOT.jar",
+          "url": "velocity-native-3.4.0-SNAPSHOT.jar",
+          "size": 237118,
+          "sha512": "b7d11827db10a28d4605e743a0bdbe2238973fa761eebf2dcd5974e2acda97e1def55d262c6b712b30704af0905972d09feff7d26ef94518c56609dbf59719e9",
+          "sha256": "172cea51c56055b58998ef4c44d807b9cf693660c09cf6fd8b8032197709a436",
+          "sha1": "a9f5a1baf48e01cc5246cd3dee6292cfffde44ad",
+          "md5": "da5cdb172b1df728ad22dda38bedf7c2"
+        }
+      ]
+    }
+  ]
+}

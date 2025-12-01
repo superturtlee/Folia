@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.denwav.hypo",
+    "module": "hypo-platform",
+    "version": "2.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm-hydrate",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-core",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-hydrate",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-mappings",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-model",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm-hydrate",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-core",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-hydrate",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-mappings",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-model",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

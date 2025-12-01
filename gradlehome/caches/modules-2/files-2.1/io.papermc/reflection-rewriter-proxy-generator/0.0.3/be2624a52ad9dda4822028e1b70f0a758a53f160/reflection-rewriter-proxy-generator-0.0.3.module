@@ -1,0 +1,139 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc",
+    "module": "reflection-rewriter-proxy-generator",
+    "version": "0.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.checkerframework",
+          "module": "checker-qual",
+          "version": {
+            "requires": "3.43.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reflection-rewriter-proxy-generator-0.0.3.jar",
+          "url": "reflection-rewriter-proxy-generator-0.0.3.jar",
+          "size": 7847,
+          "sha512": "3560a2a6f69d412b88a1e5c89dde595753935d304449edb441d6ea7695d9861959ead6e1d51ea8b128fc262c558bd46a551bdfbe9651642af101643acd82a25b",
+          "sha256": "c972ba1ae0669702b5795fb4bc79ac8741702b315c1c200ab546e470973a9690",
+          "sha1": "77e5c0e3d9e70f51a052de63350f702301ffb4ee",
+          "md5": "907691583e3c875f7c28bcb7d16fa5c9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reflection-rewriter-proxy-generator-0.0.3.jar",
+          "url": "reflection-rewriter-proxy-generator-0.0.3.jar",
+          "size": 7847,
+          "sha512": "3560a2a6f69d412b88a1e5c89dde595753935d304449edb441d6ea7695d9861959ead6e1d51ea8b128fc262c558bd46a551bdfbe9651642af101643acd82a25b",
+          "sha256": "c972ba1ae0669702b5795fb4bc79ac8741702b315c1c200ab546e470973a9690",
+          "sha1": "77e5c0e3d9e70f51a052de63350f702301ffb4ee",
+          "md5": "907691583e3c875f7c28bcb7d16fa5c9"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-proxy-generator-0.0.3-javadoc.jar",
+          "url": "reflection-rewriter-proxy-generator-0.0.3-javadoc.jar",
+          "size": 82159,
+          "sha512": "09fdb6402393932055ff5b13f69b8570b995dcc40e52cc40cbdcc062e2f146c082c20f593cbe85a0c2d3f31d7e48d9367c4b4e2764f19d2c1cc9cadb9d8d3e36",
+          "sha256": "7ccc3e9b5418af86f3051b67fe0a929538960c5222f45b3ac9cb1fdee44f1fba",
+          "sha1": "dfd90d40ea429082633c1ba0ca5aa23e9db3f2dc",
+          "md5": "c7b1668f5a689f5f99eb435d0c1385fe"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-proxy-generator-0.0.3-sources.jar",
+          "url": "reflection-rewriter-proxy-generator-0.0.3-sources.jar",
+          "size": 3536,
+          "sha512": "5ff6ff5dbc20597defad7585b5d751698c825207e3a7aec2f810acfee8f454cc85e7bb79d574471eaebe1b6a1c886617a6b7dd31bc1f851ee4a9598f07b15ad5",
+          "sha256": "46a1d5a9dc4851c6adac368dd0a76610b029f94ef6f1b434432ab3ac5520a54a",
+          "sha1": "9c2c07d6e640cf36a955c83724f2228c63926451",
+          "md5": "5fe95921e61186236aeecd62576b8184"
+        }
+      ]
+    }
+  ]
+}

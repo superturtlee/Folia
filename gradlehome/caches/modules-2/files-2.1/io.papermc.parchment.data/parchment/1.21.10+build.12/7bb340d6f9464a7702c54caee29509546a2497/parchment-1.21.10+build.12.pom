@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.papermc.parchment.data</groupId>
+  <artifactId>parchment</artifactId>
+  <version>1.21.10+build.12</version>
+  <packaging>zip</packaging>
+  <name>Parchment Mappings</name>
+  <description>Parameter names and javadoc mappings for Minecraft: Java Edition.</description>
+  <organization>
+    <name>ParchmentMC</name>
+    <url>https://github.com/ParchmentMC</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>CC0-1.0</name>
+      <url>https://creativecommons.org/publicdomain/zero/1.0/legalcode</url>
+    </license>
+  </licenses>
+  <properties>
+    <minecraft_version>1.21.10</minecraft_version>
+  </properties>
+</project>

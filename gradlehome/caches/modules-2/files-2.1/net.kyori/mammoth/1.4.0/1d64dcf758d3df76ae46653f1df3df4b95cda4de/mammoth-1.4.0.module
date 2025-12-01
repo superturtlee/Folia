@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.kyori",
+    "module": "mammoth",
+    "version": "1.4.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "24.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "mammoth-1.4.0.jar",
+          "url": "mammoth-1.4.0.jar",
+          "size": 11840,
+          "sha512": "2af63a46c542cb24e950153cba5792746c32b7add17b216cfc66f100cefed35ecbb43e3dfae1396264dc4e6a1f87fb26e6d0b76d7df58fd08e473aa8462e81ae",
+          "sha256": "b04abb96b666f763d2d7467b0308f23fe8d8b753f8ad89143814cb5ea9901eb3",
+          "sha1": "81f35b324c99fa1992d22ffcd228463c35f379d6",
+          "md5": "25d5079237a7a4f63bc737e371a6e86f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "mammoth-1.4.0.jar",
+          "url": "mammoth-1.4.0.jar",
+          "size": 11840,
+          "sha512": "2af63a46c542cb24e950153cba5792746c32b7add17b216cfc66f100cefed35ecbb43e3dfae1396264dc4e6a1f87fb26e6d0b76d7df58fd08e473aa8462e81ae",
+          "sha256": "b04abb96b666f763d2d7467b0308f23fe8d8b753f8ad89143814cb5ea9901eb3",
+          "sha1": "81f35b324c99fa1992d22ffcd228463c35f379d6",
+          "md5": "25d5079237a7a4f63bc737e371a6e86f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "mammoth-1.4.0-javadoc.jar",
+          "url": "mammoth-1.4.0-javadoc.jar",
+          "size": 323854,
+          "sha512": "abc9bb1948b5f2c1aa8562c3d84c511f2f396441b9b905cbf47eb3c0e1e5d3a53b762f6653adb4d6ebaf0c8719159cbc82d1bcbd5a49d72b244ac3401a12482d",
+          "sha256": "fa89a74054c542c4d8ad4021e6d490ea682c0c879c06b4e2176be1447e829173",
+          "sha1": "a7d9eddf3bf6e560204fad79dc3ecfb698ff87bd",
+          "md5": "4a3d7708a1ccef81033501ef45585899"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "mammoth-1.4.0-sources.jar",
+          "url": "mammoth-1.4.0-sources.jar",
+          "size": 13592,
+          "sha512": "4fcbc3cc5534940b060065d5a7ef7d69af5fd89fb820849431146fa1839f02be7acd658b2460776bbfc358df80b1e887b8a36157bca334f891b9c9485c144a90",
+          "sha256": "653da6dade03e64698d8f015576c42bbc395684014774a40cfbdc6934fa39f15",
+          "sha1": "fc39449ad22d84e5d1afcc9d678902dfded8ec39",
+          "md5": "fec59cc5a33b11e2ee443cc847255154"
+        }
+      ]
+    }
+  ]
+}

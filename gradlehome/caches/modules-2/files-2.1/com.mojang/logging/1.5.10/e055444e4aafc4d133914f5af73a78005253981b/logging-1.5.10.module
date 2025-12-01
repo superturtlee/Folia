@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mojang",
+    "module": "logging",
+    "version": "1.5.10",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "logging-1.5.10.jar",
+          "url": "logging-1.5.10.jar",
+          "size": 19800,
+          "sha512": "10938887c6f389b96b02c45f076521331ae1ea5c6a450b8e5e06614ecdcb1965c799bc4dcb500fbac8a284c88f5f9b4e52fae32c70d5aa876cb5b89dcd9cf149",
+          "sha256": "de3031f2420d649b9a4152e4e160d50b87ce6e7b4d68163caf2b5ebbaf391f7e",
+          "sha1": "9ab1202793717af9df9c1704d0a02892067001eb",
+          "md5": "0b7da24cea4e840b91c13ed08657a6d3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j2-impl",
+          "version": {
+            "requires": "2.24.1"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.24.1"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "requires": "2.24.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-1.5.10.jar",
+          "url": "logging-1.5.10.jar",
+          "size": 19800,
+          "sha512": "10938887c6f389b96b02c45f076521331ae1ea5c6a450b8e5e06614ecdcb1965c799bc4dcb500fbac8a284c88f5f9b4e52fae32c70d5aa876cb5b89dcd9cf149",
+          "sha256": "de3031f2420d649b9a4152e4e160d50b87ce6e7b4d68163caf2b5ebbaf391f7e",
+          "sha1": "9ab1202793717af9df9c1704d0a02892067001eb",
+          "md5": "0b7da24cea4e840b91c13ed08657a6d3"
+        }
+      ]
+    }
+  ]
+}

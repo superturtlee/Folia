@@ -1,0 +1,153 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc",
+    "module": "reflection-rewriter",
+    "version": "0.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "io.papermc",
+          "module": "asm-utils",
+          "version": {
+            "requires": "0.0.3"
+          }
+        },
+        {
+          "group": "org.checkerframework",
+          "module": "checker-qual",
+          "version": {
+            "requires": "3.43.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reflection-rewriter-0.0.3.jar",
+          "url": "reflection-rewriter-0.0.3.jar",
+          "size": 10743,
+          "sha512": "f72c3012e9aefe2dfe08a7850af27c92d0efb4396a46c5bd499dcad29f36492e589cda146d93289624e3db6ec161e66834c68f6c06c7b69bd2380f4b165ec7b7",
+          "sha256": "dc7dca499eb485d47abe179176d63efc7121d7249d3d9625f8bd2e7a1642a4d9",
+          "sha1": "c43065d4497050890e216ef10827ab1f7e6f412e",
+          "md5": "ff9cea671aa9bce55206974ae113367f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "io.papermc",
+          "module": "asm-utils",
+          "version": {
+            "requires": "0.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "reflection-rewriter-0.0.3.jar",
+          "url": "reflection-rewriter-0.0.3.jar",
+          "size": 10743,
+          "sha512": "f72c3012e9aefe2dfe08a7850af27c92d0efb4396a46c5bd499dcad29f36492e589cda146d93289624e3db6ec161e66834c68f6c06c7b69bd2380f4b165ec7b7",
+          "sha256": "dc7dca499eb485d47abe179176d63efc7121d7249d3d9625f8bd2e7a1642a4d9",
+          "sha1": "c43065d4497050890e216ef10827ab1f7e6f412e",
+          "md5": "ff9cea671aa9bce55206974ae113367f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-0.0.3-javadoc.jar",
+          "url": "reflection-rewriter-0.0.3-javadoc.jar",
+          "size": 88211,
+          "sha512": "642887eec93eb5f22f513aefb9f5d4261ab04fbafba247563edac3d1a1d2aeb405df44148db13e4a54fca98b683eb54b7bc7eef20f1c7e082e10c7b40dfbace4",
+          "sha256": "c79142c6b9773d0157a519829cc70459e55ae55891bd542d653496dbd68f9adb",
+          "sha1": "57677e3a01fd792e45ffedd71b72a3315b7cb151",
+          "md5": "fd8d435c1d66d475537162f97432aaa5"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reflection-rewriter-0.0.3-sources.jar",
+          "url": "reflection-rewriter-0.0.3-sources.jar",
+          "size": 5086,
+          "sha512": "2fdecbabf55dfcead5a703be2317c253fb14004fc302749d269b9d4ebc242e3a95556e0f4e36f6c7ddd111abaea969f43ab837749f530118235912bde9240641",
+          "sha256": "c3ca5dad6073945a16874fd11ac114e9670ce28ae73915fe1bbc2ba6af48a8fd",
+          "sha1": "6964af479c0d54487d0b5b323d58e6094e51e09e",
+          "md5": "83d8851548e5b94c77f2e79f8c11b9a3"
+        }
+      ]
+    }
+  ]
+}

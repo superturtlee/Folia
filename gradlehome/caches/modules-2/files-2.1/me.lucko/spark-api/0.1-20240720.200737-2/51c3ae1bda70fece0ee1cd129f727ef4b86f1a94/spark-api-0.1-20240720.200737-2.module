@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.lucko",
+    "module": "spark-api",
+    "version": "0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spark-api-0.1-SNAPSHOT.jar",
+          "url": "spark-api-0.1-SNAPSHOT.jar",
+          "size": 9520,
+          "sha512": "102a13ffb1f533f15ba16b826241cbc095d676879724778082592b1e655ddd1797bc49a4ed74b97515887e1bd9acf918f322c6a674f033ad5ac99e8db63103e0",
+          "sha256": "f99a3ba0cd3df1aee7b8f285fe7967a28d9c0cea37fa6621b643da919dcfb819",
+          "sha1": "aff109f15c4c8c1a3d8d2d30cab60bcc9388e513",
+          "md5": "68527807d67eb071d3f348fb90c63300"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spark-api-0.1-SNAPSHOT.jar",
+          "url": "spark-api-0.1-SNAPSHOT.jar",
+          "size": 9520,
+          "sha512": "102a13ffb1f533f15ba16b826241cbc095d676879724778082592b1e655ddd1797bc49a4ed74b97515887e1bd9acf918f322c6a674f033ad5ac99e8db63103e0",
+          "sha256": "f99a3ba0cd3df1aee7b8f285fe7967a28d9c0cea37fa6621b643da919dcfb819",
+          "sha1": "aff109f15c4c8c1a3d8d2d30cab60bcc9388e513",
+          "md5": "68527807d67eb071d3f348fb90c63300"
+        }
+      ]
+    }
+  ]
+}

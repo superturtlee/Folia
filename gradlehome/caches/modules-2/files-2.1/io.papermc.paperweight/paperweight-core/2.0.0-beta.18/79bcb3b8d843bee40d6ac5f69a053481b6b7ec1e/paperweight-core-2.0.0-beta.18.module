@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc.paperweight",
+    "module": "paperweight-core",
+    "version": "2.0.0-beta.18",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paperweight-core-2.0.0-beta.18-sources.jar",
+          "url": "paperweight-core-2.0.0-beta.18-sources.jar",
+          "size": 194423,
+          "sha512": "0d710b5c1485e00780779343cd27d752be896d16c11bf737dafdec9c27ef7c4b601a480b8e4c9e6c1d1665337e0f7ae2eefd78693a7cb6d5acf718b7ad6ef053",
+          "sha256": "d0d6bc4ef4600702a02cdf4f17c4e32c790461e0e21a884525822aa925a3195c",
+          "sha1": "a11d9a6841f421ea8ce56f311f01d6e04bc19c13",
+          "md5": "58de62969139324b4895aa8b6896d9fb"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.plugin.api-version": "8.14",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paperweight-core-2.0.0-beta.18.jar",
+          "url": "paperweight-core-2.0.0-beta.18.jar",
+          "size": 12217124,
+          "sha512": "fbfd8baecfd1f19d87f034721d032bc24af62c8a9cab1e227929a42449814b18b0cd7141c8d645794b7b5a4f33a00f78cd61787d5f4d7478445a7fd8306be3ab",
+          "sha256": "b145fe9019d32521465e4b2194179272d669071e66d0c3c60c0811bc1924949f",
+          "sha1": "6287a5b5a68eb8fc7aeb67c7fb3eafa90a6028c0",
+          "md5": "177716056a3a701fca1d8cd2f378297b"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paperweight-core-2.0.0-beta.18-javadoc.jar",
+          "url": "paperweight-core-2.0.0-beta.18-javadoc.jar",
+          "size": 261,
+          "sha512": "c831d9da3972574cf6472c63f897345165660f2648a3d0e269de7f291e7783a0b7746ee46652eac46ebfb6f5bd3e27c0f6f7597a59fc4c00b81a3daa888ae32b",
+          "sha256": "0444d7d91ebcee3bc8c4e11663cf89d944e788d232cf4d469f03cce388b28561",
+          "sha1": "4a3f06f10546d5bcf8cdd0a6254fb94d10863a35",
+          "md5": "0b48e14028317f6053ff21f9cf1e4a45"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.kyori",
+    "module": "adventure-text-serializer-gson",
+    "version": "4.25.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "net.kyori",
+          "module": "adventure-bom",
+          "version": {
+            "requires": "4.25.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-json",
+          "version": {
+            "requires": "4.25.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-text-serializer-gson-4.25.0.jar",
+          "url": "adventure-text-serializer-gson-4.25.0.jar",
+          "size": 66485,
+          "sha512": "b93fe6c18bd58d646348cc6486ab5cfb3bd913c5b341380e7de5331b69478bf6fddd9139826052e769fb19ce842ed29c96c0fcce415864d1c555ff04351db388",
+          "sha256": "931f67959d46e0fe55b64ab9164e31b578b79235787f69d472b62865f97b7245",
+          "sha1": "e312e240fe82f4207ff2232b33ee4433855bdfff",
+          "md5": "07ec98337425db602546845caea34178"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-commons",
+          "version": {
+            "requires": "4.25.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-bom",
+          "version": {
+            "requires": "4.25.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-json",
+          "version": {
+            "requires": "4.25.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-text-serializer-gson-4.25.0.jar",
+          "url": "adventure-text-serializer-gson-4.25.0.jar",
+          "size": 66485,
+          "sha512": "b93fe6c18bd58d646348cc6486ab5cfb3bd913c5b341380e7de5331b69478bf6fddd9139826052e769fb19ce842ed29c96c0fcce415864d1c555ff04351db388",
+          "sha256": "931f67959d46e0fe55b64ab9164e31b578b79235787f69d472b62865f97b7245",
+          "sha1": "e312e240fe82f4207ff2232b33ee4433855bdfff",
+          "md5": "07ec98337425db602546845caea34178"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.kyori",
+          "module": "adventure-bom",
+          "version": {
+            "requires": "4.25.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-json",
+          "version": {
+            "requires": "4.25.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-text-serializer-gson-4.25.0-javadoc.jar",
+          "url": "adventure-text-serializer-gson-4.25.0-javadoc.jar",
+          "size": 108779,
+          "sha512": "35aff1d45aaed762dc81c40ab7c00498550f612c25f9b26bec0dab80aec289247f12e9c2e27f987ff45e48cf0272a61cf66e22c64bedd2f74e893f0ad2651f66",
+          "sha256": "86b430bb0f5c7b1470342bf5a3ef6bdc02cc859661c5703d3110cc286dbef520",
+          "sha1": "798456a7212d6167d804ba3ab2f118d4a5b1d936",
+          "md5": "9ead32b4d44d313c113a8c9aa50c97d1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "adventure-text-serializer-gson-4.25.0-sources.jar",
+          "url": "adventure-text-serializer-gson-4.25.0-sources.jar",
+          "size": 47481,
+          "sha512": "325e27fd6e43282406824d3bb2c48f4e23eac39df179da389ea9aa77b39e01e2d8e68fe65c65143e54db1001843ea26ebb702d31c6659685dbb31a95ad75191a",
+          "sha256": "8c085caa5511e79e7cadc6cbcd043e82cbfa1a83f42428a41f16414cfc8c2999",
+          "sha1": "94ad1de2affa953355cc34e0c2c5742fe35d5449",
+          "md5": "a0f2e877a834c5e4c9890bc024d216e8"
+        }
+      ]
+    }
+  ]
+}

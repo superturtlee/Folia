@@ -1,0 +1,179 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc.codebook",
+    "module": "codebook-cli",
+    "version": "1.0.17",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "codebook-cli-1.0.17.jar",
+          "url": "codebook-cli-1.0.17.jar",
+          "size": 19677,
+          "sha512": "0732a6f3a65ff7d6e11d0bc361b0eb72e578e952bb28a45e986ef013e29e4dabf1ebc39b9f4ac12e7b40f4417f9f651c1147cb88ede4ed424c7df39a1784cbdb",
+          "sha256": "17a990d52370f674cd2b23cff53e4e4a0cde5de70a09145fc2ae48cbb1b37648",
+          "sha1": "2f39f5cc214bf7b6c8b232b4aabd679e77d7e29f",
+          "md5": "a6b82d7984a06d4bc8fcf09d1cbfe220"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.papermc.codebook",
+          "module": "codebook",
+          "version": {
+            "requires": "1.0.17"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-platform",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-model"
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-core"
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm"
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-hydrate"
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-asm-hydrate"
+        },
+        {
+          "group": "dev.denwav.hypo",
+          "module": "hypo-mappings"
+        },
+        {
+          "group": "info.picocli",
+          "module": "picocli",
+          "version": {
+            "requires": "4.7.4"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.7"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "jul-to-slf4j",
+          "version": {
+            "requires": "2.0.7"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.4.8"
+          }
+        },
+        {
+          "group": "uk.org.lidalia",
+          "module": "sysout-over-slf4j",
+          "version": {
+            "requires": "1.0.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "codebook-cli-1.0.17.jar",
+          "url": "codebook-cli-1.0.17.jar",
+          "size": 19677,
+          "sha512": "0732a6f3a65ff7d6e11d0bc361b0eb72e578e952bb28a45e986ef013e29e4dabf1ebc39b9f4ac12e7b40f4417f9f651c1147cb88ede4ed424c7df39a1784cbdb",
+          "sha256": "17a990d52370f674cd2b23cff53e4e4a0cde5de70a09145fc2ae48cbb1b37648",
+          "sha1": "2f39f5cc214bf7b6c8b232b4aabd679e77d7e29f",
+          "md5": "a6b82d7984a06d4bc8fcf09d1cbfe220"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "codebook-cli-1.0.17-sources.jar",
+          "url": "codebook-cli-1.0.17-sources.jar",
+          "size": 8083,
+          "sha512": "052b79f18e2c2d99882a61fbb5d8dbf642a8524d17687ad5363bb15d2b4b943c1f0228621a6f1463294398648d7179dc35a790fc1de614dd49719a1fd26632a6",
+          "sha256": "f7fe23e4c5ebd63971fc3fa8832ddf4e329f7a6b17d9114f526ea1ffaf058859",
+          "sha1": "f01fe422e25b990b5436105889c92762a1d82256",
+          "md5": "345841da51cb9c056d9ebe21eae54192"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "codebook-cli-1.0.17-all.jar",
+          "url": "codebook-cli-1.0.17-all.jar",
+          "size": 8395784,
+          "sha512": "3511816934e078c4e939be336de8c6ea4a42f2e223105f0f55e1640524013b80681e2833616770a7f7468b02936e3485c8ad97370a1ecf1a925b77037cfb8371",
+          "sha256": "cda33a0744b0f0b3a6d1379980f1551059c0fa9b6cda0aaa83a6ec840410727f",
+          "sha1": "c1112ffe7e982c207bd78cb9ea4df8229cb5382b",
+          "md5": "526ceba6171441e0b42e3a74f1d2df0d"
+        }
+      ]
+    }
+  ]
+}

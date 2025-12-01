@@ -1,0 +1,38 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.lucko",
+    "module": "spark-paper",
+    "version": "1.10.152",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spark-paper-1.10.152.jar",
+          "url": "spark-paper-1.10.152.jar",
+          "size": 3010987,
+          "sha512": "dbfda83c620b05f5fda4a485390f289287d739e544ae53b03a020bb72b3f24342b06574b14e427c27d3fa882f6581ec23e6a087e78133069776d6713c2205425",
+          "sha256": "e440e9d75fa50f456e10959f9ebc0962b3bf5da9ef10f784a4ca3f98612b018b",
+          "sha1": "1a1fc15f1ddd6c8740e7784f8f675d9d54de654d",
+          "md5": "6bea37463f7ffecac44f46f074d3d8da"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mojang",
+    "module": "authlib",
+    "version": "7.0.61",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "authlib-7.0.61.jar",
+          "url": "authlib-7.0.61.jar",
+          "size": 116084,
+          "sha512": "28ce4bad498f77929a7297564ebcbc0459db32fa2682859c8b845a9d40b32847792b6ee31f3177278894ee1ac3b3be5f35096613c16871d1c3fc787eb3d4acd2",
+          "sha256": "09a152617bd23c86bf59db1f9ba82ede23ec8f691a824d6c5dec4f0175f82aa4",
+          "sha1": "efee1e6b54e863108576eb3b3ae71144626aaefc",
+          "md5": "5c8736094276726c8a77f221f0af61ab"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.findbugs",
+          "module": "jsr305",
+          "version": {
+            "requires": "3.0.2"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.10"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.12.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.0.1-jre"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.8.0-beta4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "authlib-7.0.61.jar",
+          "url": "authlib-7.0.61.jar",
+          "size": 116084,
+          "sha512": "28ce4bad498f77929a7297564ebcbc0459db32fa2682859c8b845a9d40b32847792b6ee31f3177278894ee1ac3b3be5f35096613c16871d1c3fc787eb3d4acd2",
+          "sha256": "09a152617bd23c86bf59db1f9ba82ede23ec8f691a824d6c5dec4f0175f82aa4",
+          "sha1": "efee1e6b54e863108576eb3b3ae71144626aaefc",
+          "md5": "5c8736094276726c8a77f221f0af61ab"
+        }
+      ]
+    }
+  ]
+}
