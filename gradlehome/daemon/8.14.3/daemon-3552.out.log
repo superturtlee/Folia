@@ -1,0 +1,930 @@
+2025-12-01T11:25:07.163+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+2025-12-01T11:25:08.073+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface docker0
+2025-12-01T11:25:08.074+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-12-01T11:25:08.074+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.17.0.1
+2025-12-01T11:25:08.075+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+2025-12-01T11:25:08.075+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-12-01T11:25:08.075+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:6245:bdff:fedb:b2cf%eth0
+2025-12-01T11:25:08.075+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /10.1.0.45
+2025-12-01T11:25:08.076+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2025-12-01T11:25:08.076+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2025-12-01T11:25:08.076+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2025-12-01T11:25:08.077+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2025-12-01T11:25:08.110+0000 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2025-12-01T11:25:08.141+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]].
+2025-12-01T11:25:08.445+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Mon Dec 01 11:25:08 UTC 2025, with address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:08.446+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:08.446+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2025-12-01T11:25:08.447+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2025-12-01T11:25:08.513+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:08.515+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:08.519+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:08.519+0000 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2025-12-01T11:25:08.520+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2025-12-01T11:25:08.528+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2025-12-01T11:25:08.530+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2025-12-01T11:25:08.530+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:08.535+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:56750 to /127.0.0.1:33221.
+2025-12-01T11:25:08.631+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: received class org.gradle.launcher.daemon.protocol.Build
+2025-12-01T11:25:08.631+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 29: Received non-IO message from client: Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:25:08.632+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}.
+2025-12-01T11:25:08.632+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia} with connection: socket connection from /127.0.0.1:33221 to /127.0.0.1:56750.
+2025-12-01T11:25:08.735+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:56750] after 0.008366666666666666 minutes of idle
+2025-12-01T11:25:08.735+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:08.736+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:08.736+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:08.737+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:08.738+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:08.738+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:25:08.739+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:08.740+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}. Dispatching build started information...
+2025-12-01T11:25:08.740+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 31: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@3d8cfab9
+2025-12-01T11:25:08.741+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, GITHUB_REPOSITORY_OWNER, SWIFT_PATH, SGX_AESM_ADDR, GITHUB_REPOSITORY_ID, CHROMEWEBDRIVER, COPILOT_AGENT_SOURCE_ENVIRONMENT, DBUS_SESSION_BUS_ADDRESS, COPILOT_AGENT_ONLINE_EVALUATION_DISABLED, GITHUB_RUN_NUMBER, ANDROID_HOME, SUDO_USER, GITHUB_RETENTION_DAYS, GITHUB_WORKSPACE, GITHUB_API_URL, GITHUB_RUN_ATTEMPT, COPILOT_AGENT_INJECTED_SECRET_NAMES, GITHUB_UPLOADS_URL, COPILOT_FEATURE_FLAGS, PWD, COPILOT_AGENT_RUNTIME_VERSION, GITHUB_JOB, GITHUB_ACTIONS, COPILOT_AGENT_ACTION, DOTNET_MULTILEVEL_LOOKUP, SHOULD_CONTINUE, HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS, COPILOT_AGENT_BASE_COMMIT, RUNNER_ENVIRONMENT, ANDROID_NDK, GITHUB_ENV, GOROOT_1_24_X64, GITHUB_EVENT_PATH, GITHUB_REF_TYPE, GITHUB_ACTOR_ID, COPILOT_AGENT_CONTENT_FILTER_MODE, SHLVL, RUNNER_TOOL_CACHE, COPILOT_USE_SESSIONS, CPD_SAVE_TRAJECTORY_OUTPUT, GOROOT_1_23_X64, COPILOT_AGENT_PR_COMMIT_COUNT, GITHUB_SERVER_URL, JAVA_HOME, GITHUB_REF, MEMORY_PRESSURE_WATCH, RUNNER_NAME, BOOTSTRAP_HASKELL_NONINTERACTIVE, TERM, XDG_SESSION_ID, CAROOT, GRADLE_HOME, FIREWALL_RULESET_CONTENT, ANT_HOME, COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT, GITHUB_DOWNLOADS_URL, GRADLE_USER_HOME, GITHUB_OUTPUT, JAVA_HOME_17_X64, GITHUB_STEP_SUMMARY, GITHUB_REPOSITORY, NODE_EXTRA_CA_CERTS, COPILOT_AGENT_START_TIME_SEC, GITHUB_ACTION_REF, COPILOT_JOB_EVENT_TYPE, SUDO_UID, XDG_SESSION_CLASS, _, AZURE_EXTENSION_DIR, SSL_CERT_FILE, SSL_CERT_DIR, CI, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, DOTNET_SYSTEM_NET_DISABLEIPV6, RUNNER_ARCH, GITHUB_SHA, SUDO_COMMAND, COPILOT_AGENT_MCP_SERVER_TEMP, ImageOS, JAVA_HOME_25_X64, ImageVersion, ACCEPT_EULA, COPILOT_AGENT_FIREWALL_LOG_FILE, RUNNER_TRACKING_ID, RUNNER_WORKSPACE, INVOCATION_ID, COPILOT_AGENT_COMMIT_LOGIN, COPILOT_AGENT_TIMEOUT_MIN, GITHUB_REF_PROTECTED, EDGEWEBDRIVER, COPILOT_AGENT_BRANCH_NAME, GITHUB_WORKFLOW, CONDA, COPILOT_AGENT_DEBUG, COPILOT_EXPERIMENTS, SELENIUM_JAR_PATH, GITHUB_BASE_REF, PIPX_HOME, JOURNAL_STREAM, GITHUB_WORKFLOW_SHA, MAIL, COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST, GITHUB_PATH, ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE, GITHUB_EVENT_NAME, LOGNAME, GITHUB_TRIGGERING_ACTOR, CHROME_BIN, CURL_CA_BUNDLE, SHELL, AGENT_TOOLSDIRECTORY, GOROOT_1_25_X64, REQUESTS_CA_BUNDLE, ANDROID_NDK_HOME, ANDROID_NDK_ROOT, VCPKG_INSTALLATION_ROOT, GITHUB_GRAPHQL_URL, OLDPWD, ENABLE_RUNNER_TRACING, JAVA_HOME_21_X64, DOTNET_NOLOGO, RUNNER_OS, GITHUB_WORKFLOW_REF, DEBIAN_FRONTEND, POWERSHELL_DISTRIBUTION_CHANNEL, GITHUB_ACTION, GITHUB_ACTOR, SYSTEMD_EXEC_PID, PIPX_BIN_DIR, MEMORY_PRESSURE_WRITE, COPILOT_API_URL, COPILOT_AGENT_PR_NUMBER, COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST, JAVA_HOME_8_X64, GOROOT_1_22_X64, GECKOWEBDRIVER, LANG, GITHUB_REPOSITORY_OWNER_ID, XDG_SESSION_TYPE, COPILOT_MCP_ENABLED, COPILOT_AGENT_CALLBACK_URL, SUDO_GID, GHCUP_INSTALL_BASE_PREFIX, COPILOT_AGENT_ISSUE_NUMBER, GITHUB_STATE, GITHUB_REF_NAME, NVM_DIR, ANDROID_NDK_LATEST_HOME, BLACKBIRD_MODE, GITHUB_ACTION_REPOSITORY, HOMEBREW_NO_AUTO_UPDATE, COPILOT_AGENT_COMMIT_EMAIL, ANDROID_SDK_ROOT, GITHUB_RUN_ID, USER, XDG_CONFIG_HOME, RUNNER_TEMP, GITHUB_HEAD_REF, JAVA_HOME_11_X64, XDG_RUNTIME_DIR, HOME]
+2025-12-01T11:25:08.782+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-12-01T11:25:08.782+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3552). The daemon log file: /home/runner/work/Folia/Folia/gradlehome/daemon/8.14.3/daemon-3552.out.log
+2025-12-01T11:25:08.826+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 512 MiB]
+2025-12-01T11:25:08.828+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-12-01T11:25:08.828+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Calculating task graph as configuration cache cannot be reused because Gradle user home directory has changed.
+paperweight-patcher v2.0.0-beta.18 (running on 'Linux')
+paperweight-core v2.0.0-beta.18 (running on 'Linux')
+
+------------------------------------------------------------
+Tasks runnable from root project 'folia'
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+fixJarForReobf
+includeMappings
+jar - Assembles a jar archive containing the classes of the 'main' feature.
+javadocJar - Assembles a jar archive containing the main javadoc.
+log4jPluginsClasses - Assembles log4j plugins classes.
+relocateConstants
+reobfJar - Re-obfuscate the built jar to obf mappings
+sourcesJar - Assembles a jar archive containing the main sources.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+updateDaemonJvm - Generates or updates the Gradle Daemon JVM criteria.
+wrapper - Generates Gradle wrapper files.
+
+Bundling tasks
+--------------
+createMojmapBundlerJar - Build a runnable bundler jar
+createMojmapPaperclipJar - Build a runnable paperclip jar
+createReobfBundlerJar - Build a runnable bundler jar
+createReobfPaperclipJar - Build a runnable paperclip jar
+generateDevelopmentBundle
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the 'main' feature.
+
+Fill tasks
+----------
+publishToFill - Publish to Fill
+
+Help tasks
+----------
+artifactTransforms - Displays the Artifact Transforms that can be executed in root project 'folia'.
+buildEnvironment - Displays all buildscript dependencies declared in root project 'folia'.
+dependencies - Displays all dependencies declared in root project 'folia'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'folia'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions and conventions.
+outgoingVariants - Displays the outgoing variants of root project 'folia'.
+projects - Displays the sub-projects of root project 'folia'.
+properties - Displays the properties of root project 'folia'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'folia'.
+tasks - Displays the tasks runnable from root project 'folia' (some of the displayed tasks may belong to subprojects).
+
+IDE tasks
+---------
+cleanIdea - Cleans IDEA project files (IML, IPR)
+idea - Generates IDEA project files (IML, IPR, IWS)
+
+Minecraft patching tasks
+------------------------
+applyMinecraftFeaturePatches - Applies all folia Minecraft feature patches
+applyMinecraftFilePatches - Applies all folia Minecraft file patches
+applyMinecraftPatches - Applies all folia Minecraft patches
+applyMinecraftResourcePatches - Applies folia file patches to the Minecraft resources
+applyMinecraftSourcePatches - Applies folia file patches to the Minecraft sources
+applyMinecraftSourcePatchesFuzzy - Applies folia file patches to the Minecraft sources
+applyOrMoveMinecraftSourcePatches - Applies folia file patches to the Minecraft sources as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+fixupMinecraftResourcePatches - Puts the currently tracked resource changes into the folia Minecraft resources file patches commit
+fixupMinecraftSourcePatches - Puts the currently tracked source changes into the folia Minecraft sources file patches commit
+rebuildMinecraftFeaturePatches - Rebuilds all folia feature patches to the Minecraft sources
+rebuildMinecraftFilePatches - Rebuilds all folia file patches to Minecraft
+rebuildMinecraftPatches - Rebuilds all folia patches to Minecraft
+rebuildMinecraftResourcePatches - Rebuilds folia file patches to the Minecraft resources
+rebuildMinecraftSourcePatches - Rebuilds folia file patches to the Minecraft sources
+
+Paperweight tasks
+-----------------
+cleanCache - Delete the project setup cache and task outputs.
+
+Paperweight internal tasks
+--------------------------
+applyForDownstream
+applyUpstream
+checkoutPaperRepo
+cleanupMappings
+cloneSpigotBuildData
+collectFoliaATsFromPatches
+collectPaperATsFromPatches
+downloadMappings
+downloadMcLibrariesSources
+downloadMcManifest
+downloadMcVersionManifest
+downloadRuntimeClasspathSources
+downloadServerJar
+extractFromBundler
+extractMacheResources
+extractMacheSources
+extractMacheSourcesForDevBundle
+filterPaperApiFromPaper
+filterPaperServerFromPaper
+filterVanillaJar
+generateMappings
+generateRelocatedReobfMappings
+generateReobfMappings
+generateSpigotMappings
+importFoliaLibraryFiles
+importPaperLibraryFiles
+indexLibraryFiles
+macheDecompileJar
+macheRemapJar
+mergeFoliaATs
+mergePaperATs
+paperclipForDevBundle
+patchMappings
+patchReobfMappings
+runFoliaSetup - Applies folia ATs and library imports to Minecraft sources
+serverBundlerForDevBundle
+setupMacheResources - Setup Minecraft resources dir
+setupMacheSources - Setup Minecraft source dir (applying mache patches and paper ATs).
+setupMacheSourcesForDevBundle - Setup Minecraft source dir (applying mache patches).
+spigotRemapJar
+unpackSpigotBuildData
+
+Patching tasks
+--------------
+applyAllPatches - Applies all patches defined in the paperweight-patcher project and the server project. (equivalent to running 'applyPaperPatches' and then 'applyAllServerPatches' in a second Gradle invocation)
+applyAllServerFeaturePatches - Applies all Minecraft and upstream server feature patches (equivalent to 'applyMinecraftFeaturePatches applyServerFeaturePatches')
+applyAllServerFilePatches - Applies all Minecraft and upstream server file patches (equivalent to 'applyMinecraftFilePatches applyServerFilePatches')
+applyAllServerPatches - Applies all Minecraft and upstream server patches (equivalent to 'applyMinecraftPatches applyServerPatches')
+applyOrMovePaperApiFilePatches - Applies paperApi file patches as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+applyPaperApiFeaturePatches - Applies paperApi feature patches
+applyPaperApiFilePatches - Applies paperApi file patches
+applyPaperApiFilePatchesFuzzy - Applies paperApi file patches
+applyPaperApiPatches - Applies all paperApi patches
+applyPaperFeaturePatches - Applies paperApi feature patches
+applyPaperFilePatches - Applies paperApi file patches
+applyPaperPatches - Applies all paperApi, paper single file patches
+applyPaperSingleFilePatches - Applies all paper single-file patches
+applyPaperSingleFilePatchesFuzzy - Applies all paper single-file patches
+fixupPaperApiFilePatches - Puts the currently tracked source changes into the paperApi file patches commit
+rebuildAllServerFeaturePatches - Rebuilds all Minecraft and upstream server feature patches (equivalent to 'rebuildMinecraftFeaturePatches rebuildServerFeaturePatches')
+rebuildAllServerFilePatches - Rebuilds all Minecraft and upstream server file patches (equivalent to 'rebuildMinecraftFilePatches rebuildServerFilePatches')
+rebuildAllServerPatches - Rebuilds all Minecraft and upstream server patches (equivalent to 'rebuildMinecraftPatches rebuildServerPatches')
+rebuildPaperApiFeaturePatches - Rebuilds paperApi feature patches
+rebuildPaperApiFilePatches - Rebuilds paperApi file patches
+rebuildPaperApiPatches - Rebuilds all paperApi patches
+rebuildPaperFeaturePatches - Applies paperApi feature patches
+rebuildPaperFilePatches - Rebuilds paperApi file patches
+rebuildPaperPatches - Rebuilds all paperApi, paper single file patches
+rebuildPaperSingleFilePatches - Rebuilds all paper single-file patches
+
+Publishing tasks
+----------------
+generateMetadataFileForMavenPublication - Generates the Gradle metadata file for publication 'maven'.
+generatePomFileForMavenPublication - Generates the Maven POM file for publication 'maven'.
+publish - Publishes all publications produced by this project.
+publishAllPublicationsToPaperSnapshotsRepository - Publishes all Maven publications produced by this project to the paperSnapshots repository.
+publishMavenPublicationToMavenLocal - Publishes Maven publication 'maven' to the local Maven repository.
+publishMavenPublicationToPaperSnapshotsRepository - Publishes Maven publication 'maven' to Maven repository 'paperSnapshots'.
+publishToMavenLocal - Publishes all Maven publications produced by this project to the local Maven cache.
+
+Runs tasks
+----------
+runBundler - Spin up a test server from the Mojang mapped bundler jar
+runDevServer - Spin up a test server without assembling a jar
+runPaperclip - Spin up a test server from the Mojang mapped Paperclip jar
+runReobfBundler - Spin up a test server from the reobf bundler jar
+runReobfPaperclip - Spin up a test server from the reobf Paperclip jar
+runReobfServer - Spin up a test server from the reobfJar output jar
+runServer - Spin up a test server from the Mojang mapped server jar
+
+Server patching tasks
+---------------------
+applyOrMovePaperServerFilePatches - Applies paperServer file patches as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+applyPaperServerFeaturePatches - Applies paperServer feature patches
+applyPaperServerFilePatches - Applies paperServer file patches
+applyPaperServerFilePatchesFuzzy - Applies paperServer file patches
+applyPaperServerPatches - Applies all paperServer patches
+applyServerFeaturePatches - Applies paperServer feature patches
+applyServerFilePatches - Applies paperServer file patches
+applyServerPatches - Applies all paperServer patches
+fixupPaperServerFilePatches - Puts the currently tracked source changes into the paperServer file patches commit
+rebuildPaperServerFeaturePatches - Rebuilds paperServer feature patches
+rebuildPaperServerFilePatches - Rebuilds paperServer file patches
+rebuildPaperServerPatches - Rebuilds all paperServer patches
+rebuildServerFeaturePatches - Applies paperServer feature patches
+rebuildServerFilePatches - Rebuilds paperServer file patches
+rebuildServerPatches - Rebuilds all paperServer patches
+
+Upstream minecraft patching tasks
+---------------------------------
+applyPaperMinecraftFeaturePatches - Applies all paper Minecraft feature patches
+applyPaperMinecraftFilePatches - Applies all paper Minecraft file patches
+applyPaperMinecraftPatches - Applies all paper Minecraft patches
+applyPaperMinecraftResourcePatches - Applies paper file patches to the Minecraft resources
+applyPaperMinecraftSourcePatches - Applies paper file patches to the Minecraft sources
+applyPaperMinecraftSourcePatchesFuzzy - Applies paper file patches to the Minecraft sources
+
+Verification tasks
+------------------
+check - Runs all checks.
+scanJarForBadCalls
+test - Runs the test suite.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+[Incubating] Problems report is available at: file:///home/runner/work/Folia/Folia/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 22s
+1 actionable task: 1 executed
+Configuration cache entry stored.
+2025-12-01T11:25:26.063+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-12-01T11:25:26.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:26.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:56750]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@3b2d6e5 with state Busy
+2025-12-01T11:25:26.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:56750]
+2025-12-01T11:25:26.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:25:26.075+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:26.075+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:26.076+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:26.076+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:26.077+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:26.077+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:26.079+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@71781fce]
+2025-12-01T11:25:26.080+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@71781fce]
+2025-12-01T11:25:26.083+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-12-01T11:25:26.084+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-12-01T11:25:26.084+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 29: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@277f1931
+2025-12-01T11:25:26.084+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: received class org.gradle.launcher.daemon.protocol.Finished
+2025-12-01T11:25:26.084+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 29: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3e403292
+2025-12-01T11:25:26.085+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-12-01T11:25:26.085+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: received null
+2025-12-01T11:25:26.085+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 29: Received end-of-input from client.
+2025-12-01T11:25:26.086+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=1c669c87-cfa9-4ecf-bc10-b29f78c9aad6, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:25:26.087+0000 [WARN] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Timed out waiting for finished message from client socket connection from /127.0.0.1:33221 to /127.0.0.1:56750. Discarding connection.
+2025-12-01T11:25:26.088+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:25:26.089+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:25:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:25:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:28.532+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:25:28.532+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:28.532+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:37.771+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:39226 to /127.0.0.1:33221.
+2025-12-01T11:25:37.786+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 84: received class org.gradle.launcher.daemon.protocol.Build
+2025-12-01T11:25:37.787+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 84: Received non-IO message from client: Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:25:37.787+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}.
+2025-12-01T11:25:37.787+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia} with connection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39226.
+2025-12-01T11:25:37.787+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39226] after 0.19518333333333335 minutes of idle
+2025-12-01T11:25:37.787+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:37.788+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:37.788+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:37.788+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:37.789+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:37.789+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:25:37.789+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:37.789+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}. Dispatching build started information...
+2025-12-01T11:25:37.789+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 31: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@23561367
+2025-12-01T11:25:37.790+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, GITHUB_REPOSITORY_OWNER, SWIFT_PATH, SGX_AESM_ADDR, GITHUB_REPOSITORY_ID, CHROMEWEBDRIVER, COPILOT_AGENT_SOURCE_ENVIRONMENT, DBUS_SESSION_BUS_ADDRESS, COPILOT_AGENT_ONLINE_EVALUATION_DISABLED, GITHUB_RUN_NUMBER, ANDROID_HOME, SUDO_USER, GITHUB_RETENTION_DAYS, GITHUB_WORKSPACE, GITHUB_API_URL, GITHUB_RUN_ATTEMPT, COPILOT_AGENT_INJECTED_SECRET_NAMES, GITHUB_UPLOADS_URL, COPILOT_FEATURE_FLAGS, PWD, COPILOT_AGENT_RUNTIME_VERSION, GITHUB_JOB, GITHUB_ACTIONS, COPILOT_AGENT_ACTION, DOTNET_MULTILEVEL_LOOKUP, SHOULD_CONTINUE, HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS, COPILOT_AGENT_BASE_COMMIT, RUNNER_ENVIRONMENT, ANDROID_NDK, GITHUB_ENV, GOROOT_1_24_X64, GITHUB_EVENT_PATH, GITHUB_REF_TYPE, GITHUB_ACTOR_ID, COPILOT_AGENT_CONTENT_FILTER_MODE, SHLVL, RUNNER_TOOL_CACHE, COPILOT_USE_SESSIONS, CPD_SAVE_TRAJECTORY_OUTPUT, GOROOT_1_23_X64, COPILOT_AGENT_PR_COMMIT_COUNT, GITHUB_SERVER_URL, JAVA_HOME, GITHUB_REF, MEMORY_PRESSURE_WATCH, RUNNER_NAME, BOOTSTRAP_HASKELL_NONINTERACTIVE, TERM, XDG_SESSION_ID, CAROOT, GRADLE_HOME, FIREWALL_RULESET_CONTENT, ANT_HOME, COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT, GITHUB_DOWNLOADS_URL, GRADLE_USER_HOME, GITHUB_OUTPUT, JAVA_HOME_17_X64, GITHUB_STEP_SUMMARY, GITHUB_REPOSITORY, NODE_EXTRA_CA_CERTS, COPILOT_AGENT_START_TIME_SEC, GITHUB_ACTION_REF, COPILOT_JOB_EVENT_TYPE, SUDO_UID, XDG_SESSION_CLASS, _, AZURE_EXTENSION_DIR, SSL_CERT_FILE, SSL_CERT_DIR, CI, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, DOTNET_SYSTEM_NET_DISABLEIPV6, RUNNER_ARCH, GITHUB_SHA, SUDO_COMMAND, COPILOT_AGENT_MCP_SERVER_TEMP, ImageOS, JAVA_HOME_25_X64, ImageVersion, ACCEPT_EULA, COPILOT_AGENT_FIREWALL_LOG_FILE, RUNNER_TRACKING_ID, RUNNER_WORKSPACE, INVOCATION_ID, COPILOT_AGENT_COMMIT_LOGIN, COPILOT_AGENT_TIMEOUT_MIN, GITHUB_REF_PROTECTED, EDGEWEBDRIVER, COPILOT_AGENT_BRANCH_NAME, GITHUB_WORKFLOW, CONDA, COPILOT_AGENT_DEBUG, COPILOT_EXPERIMENTS, SELENIUM_JAR_PATH, GITHUB_BASE_REF, PIPX_HOME, JOURNAL_STREAM, GITHUB_WORKFLOW_SHA, MAIL, COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST, GITHUB_PATH, ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE, GITHUB_EVENT_NAME, LOGNAME, GITHUB_TRIGGERING_ACTOR, CHROME_BIN, CURL_CA_BUNDLE, SHELL, AGENT_TOOLSDIRECTORY, GOROOT_1_25_X64, REQUESTS_CA_BUNDLE, ANDROID_NDK_HOME, ANDROID_NDK_ROOT, VCPKG_INSTALLATION_ROOT, GITHUB_GRAPHQL_URL, OLDPWD, ENABLE_RUNNER_TRACING, JAVA_HOME_21_X64, DOTNET_NOLOGO, RUNNER_OS, GITHUB_WORKFLOW_REF, DEBIAN_FRONTEND, POWERSHELL_DISTRIBUTION_CHANNEL, GITHUB_ACTION, GITHUB_ACTOR, SYSTEMD_EXEC_PID, PIPX_BIN_DIR, MEMORY_PRESSURE_WRITE, COPILOT_API_URL, COPILOT_AGENT_PR_NUMBER, COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST, JAVA_HOME_8_X64, GOROOT_1_22_X64, GECKOWEBDRIVER, LANG, GITHUB_REPOSITORY_OWNER_ID, XDG_SESSION_TYPE, COPILOT_MCP_ENABLED, COPILOT_AGENT_CALLBACK_URL, SUDO_GID, GHCUP_INSTALL_BASE_PREFIX, COPILOT_AGENT_ISSUE_NUMBER, GITHUB_STATE, GITHUB_REF_NAME, NVM_DIR, ANDROID_NDK_LATEST_HOME, BLACKBIRD_MODE, GITHUB_ACTION_REPOSITORY, HOMEBREW_NO_AUTO_UPDATE, COPILOT_AGENT_COMMIT_EMAIL, ANDROID_SDK_ROOT, GITHUB_RUN_ID, USER, XDG_CONFIG_HOME, RUNNER_TEMP, GITHUB_HEAD_REF, JAVA_HOME_11_X64, XDG_RUNTIME_DIR, HOME]
+2025-12-01T11:25:37.792+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-12-01T11:25:37.792+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3552). The daemon log file: /home/runner/work/Folia/Folia/gradlehome/daemon/8.14.3/daemon-3552.out.log
+2025-12-01T11:25:37.794+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 30.353 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 34% of 384 MiB]
+2025-12-01T11:25:37.794+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-12-01T11:25:37.795+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Reusing configuration cache.
+
+------------------------------------------------------------
+Tasks runnable from root project 'folia'
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+fixJarForReobf
+includeMappings
+jar - Assembles a jar archive containing the classes of the 'main' feature.
+javadocJar - Assembles a jar archive containing the main javadoc.
+log4jPluginsClasses - Assembles log4j plugins classes.
+relocateConstants
+reobfJar - Re-obfuscate the built jar to obf mappings
+sourcesJar - Assembles a jar archive containing the main sources.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+updateDaemonJvm - Generates or updates the Gradle Daemon JVM criteria.
+wrapper - Generates Gradle wrapper files.
+
+Bundling tasks
+--------------
+createMojmapBundlerJar - Build a runnable bundler jar
+createMojmapPaperclipJar - Build a runnable paperclip jar
+createReobfBundlerJar - Build a runnable bundler jar
+createReobfPaperclipJar - Build a runnable paperclip jar
+generateDevelopmentBundle
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the 'main' feature.
+
+Fill tasks
+----------
+publishToFill - Publish to Fill
+
+Help tasks
+----------
+artifactTransforms - Displays the Artifact Transforms that can be executed in root project 'folia'.
+buildEnvironment - Displays all buildscript dependencies declared in root project 'folia'.
+dependencies - Displays all dependencies declared in root project 'folia'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'folia'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions and conventions.
+outgoingVariants - Displays the outgoing variants of root project 'folia'.
+projects - Displays the sub-projects of root project 'folia'.
+properties - Displays the properties of root project 'folia'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'folia'.
+tasks - Displays the tasks runnable from root project 'folia' (some of the displayed tasks may belong to subprojects).
+
+IDE tasks
+---------
+cleanIdea - Cleans IDEA project files (IML, IPR)
+idea - Generates IDEA project files (IML, IPR, IWS)
+
+Minecraft patching tasks
+------------------------
+applyMinecraftFeaturePatches - Applies all folia Minecraft feature patches
+applyMinecraftFilePatches - Applies all folia Minecraft file patches
+applyMinecraftPatches - Applies all folia Minecraft patches
+applyMinecraftResourcePatches - Applies folia file patches to the Minecraft resources
+applyMinecraftSourcePatches - Applies folia file patches to the Minecraft sources
+applyMinecraftSourcePatchesFuzzy - Applies folia file patches to the Minecraft sources
+applyOrMoveMinecraftSourcePatches - Applies folia file patches to the Minecraft sources as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+fixupMinecraftResourcePatches - Puts the currently tracked resource changes into the folia Minecraft resources file patches commit
+fixupMinecraftSourcePatches - Puts the currently tracked source changes into the folia Minecraft sources file patches commit
+rebuildMinecraftFeaturePatches - Rebuilds all folia feature patches to the Minecraft sources
+rebuildMinecraftFilePatches - Rebuilds all folia file patches to Minecraft
+rebuildMinecraftPatches - Rebuilds all folia patches to Minecraft
+rebuildMinecraftResourcePatches - Rebuilds folia file patches to the Minecraft resources
+rebuildMinecraftSourcePatches - Rebuilds folia file patches to the Minecraft sources
+
+Paperweight tasks
+-----------------
+cleanCache - Delete the project setup cache and task outputs.
+
+Paperweight internal tasks
+--------------------------
+applyForDownstream
+applyUpstream
+checkoutPaperRepo
+cleanupMappings
+cloneSpigotBuildData
+collectFoliaATsFromPatches
+collectPaperATsFromPatches
+downloadMappings
+downloadMcLibrariesSources
+downloadMcManifest
+downloadMcVersionManifest
+downloadRuntimeClasspathSources
+downloadServerJar
+extractFromBundler
+extractMacheResources
+extractMacheSources
+extractMacheSourcesForDevBundle
+filterPaperApiFromPaper
+filterPaperServerFromPaper
+filterVanillaJar
+generateMappings
+generateRelocatedReobfMappings
+generateReobfMappings
+generateSpigotMappings
+importFoliaLibraryFiles
+importPaperLibraryFiles
+indexLibraryFiles
+macheDecompileJar
+macheRemapJar
+mergeFoliaATs
+mergePaperATs
+paperclipForDevBundle
+patchMappings
+patchReobfMappings
+runFoliaSetup - Applies folia ATs and library imports to Minecraft sources
+serverBundlerForDevBundle
+setupMacheResources - Setup Minecraft resources dir
+setupMacheSources - Setup Minecraft source dir (applying mache patches and paper ATs).
+setupMacheSourcesForDevBundle - Setup Minecraft source dir (applying mache patches).
+spigotRemapJar
+unpackSpigotBuildData
+
+Patching tasks
+--------------
+applyAllPatches - Applies all patches defined in the paperweight-patcher project and the server project. (equivalent to running 'applyPaperPatches' and then 'applyAllServerPatches' in a second Gradle invocation)
+applyAllServerFeaturePatches - Applies all Minecraft and upstream server feature patches (equivalent to 'applyMinecraftFeaturePatches applyServerFeaturePatches')
+applyAllServerFilePatches - Applies all Minecraft and upstream server file patches (equivalent to 'applyMinecraftFilePatches applyServerFilePatches')
+applyAllServerPatches - Applies all Minecraft and upstream server patches (equivalent to 'applyMinecraftPatches applyServerPatches')
+applyOrMovePaperApiFilePatches - Applies paperApi file patches as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+applyPaperApiFeaturePatches - Applies paperApi feature patches
+applyPaperApiFilePatches - Applies paperApi file patches
+applyPaperApiFilePatchesFuzzy - Applies paperApi file patches
+applyPaperApiPatches - Applies all paperApi patches
+applyPaperFeaturePatches - Applies paperApi feature patches
+applyPaperFilePatches - Applies paperApi file patches
+applyPaperPatches - Applies all paperApi, paper single file patches
+applyPaperSingleFilePatches - Applies all paper single-file patches
+applyPaperSingleFilePatchesFuzzy - Applies all paper single-file patches
+fixupPaperApiFilePatches - Puts the currently tracked source changes into the paperApi file patches commit
+rebuildAllServerFeaturePatches - Rebuilds all Minecraft and upstream server feature patches (equivalent to 'rebuildMinecraftFeaturePatches rebuildServerFeaturePatches')
+rebuildAllServerFilePatches - Rebuilds all Minecraft and upstream server file patches (equivalent to 'rebuildMinecraftFilePatches rebuildServerFilePatches')
+rebuildAllServerPatches - Rebuilds all Minecraft and upstream server patches (equivalent to 'rebuildMinecraftPatches rebuildServerPatches')
+rebuildPaperApiFeaturePatches - Rebuilds paperApi feature patches
+rebuildPaperApiFilePatches - Rebuilds paperApi file patches
+rebuildPaperApiPatches - Rebuilds all paperApi patches
+rebuildPaperFeaturePatches - Applies paperApi feature patches
+rebuildPaperFilePatches - Rebuilds paperApi file patches
+rebuildPaperPatches - Rebuilds all paperApi, paper single file patches
+rebuildPaperSingleFilePatches - Rebuilds all paper single-file patches
+
+Publishing tasks
+----------------
+generateMetadataFileForMavenPublication - Generates the Gradle metadata file for publication 'maven'.
+generatePomFileForMavenPublication - Generates the Maven POM file for publication 'maven'.
+publish - Publishes all publications produced by this project.
+publishAllPublicationsToPaperSnapshotsRepository - Publishes all Maven publications produced by this project to the paperSnapshots repository.
+publishMavenPublicationToMavenLocal - Publishes Maven publication 'maven' to the local Maven repository.
+publishMavenPublicationToPaperSnapshotsRepository - Publishes Maven publication 'maven' to Maven repository 'paperSnapshots'.
+publishToMavenLocal - Publishes all Maven publications produced by this project to the local Maven cache.
+
+Runs tasks
+----------
+runBundler - Spin up a test server from the Mojang mapped bundler jar
+runDevServer - Spin up a test server without assembling a jar
+runPaperclip - Spin up a test server from the Mojang mapped Paperclip jar
+runReobfBundler - Spin up a test server from the reobf bundler jar
+runReobfPaperclip - Spin up a test server from the reobf Paperclip jar
+runReobfServer - Spin up a test server from the reobfJar output jar
+runServer - Spin up a test server from the Mojang mapped server jar
+
+Server patching tasks
+---------------------
+applyOrMovePaperServerFilePatches - Applies paperServer file patches as Git patches, moving any failed patches to the rejects dir. Useful when updating to a new Minecraft version.
+applyPaperServerFeaturePatches - Applies paperServer feature patches
+applyPaperServerFilePatches - Applies paperServer file patches
+applyPaperServerFilePatchesFuzzy - Applies paperServer file patches
+applyPaperServerPatches - Applies all paperServer patches
+applyServerFeaturePatches - Applies paperServer feature patches
+applyServerFilePatches - Applies paperServer file patches
+applyServerPatches - Applies all paperServer patches
+fixupPaperServerFilePatches - Puts the currently tracked source changes into the paperServer file patches commit
+rebuildPaperServerFeaturePatches - Rebuilds paperServer feature patches
+rebuildPaperServerFilePatches - Rebuilds paperServer file patches
+rebuildPaperServerPatches - Rebuilds all paperServer patches
+rebuildServerFeaturePatches - Applies paperServer feature patches
+rebuildServerFilePatches - Rebuilds paperServer file patches
+rebuildServerPatches - Rebuilds all paperServer patches
+
+Upstream minecraft patching tasks
+---------------------------------
+applyPaperMinecraftFeaturePatches - Applies all paper Minecraft feature patches
+applyPaperMinecraftFilePatches - Applies all paper Minecraft file patches
+applyPaperMinecraftPatches - Applies all paper Minecraft patches
+applyPaperMinecraftResourcePatches - Applies paper file patches to the Minecraft resources
+applyPaperMinecraftSourcePatches - Applies paper file patches to the Minecraft sources
+applyPaperMinecraftSourcePatchesFuzzy - Applies paper file patches to the Minecraft sources
+
+Verification tasks
+------------------
+check - Runs all checks.
+scanJarForBadCalls
+test - Runs the test suite.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL in 801ms
+1 actionable task: 1 executed
+Configuration cache entry reused.
+2025-12-01T11:25:37.958+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-12-01T11:25:37.961+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:37.962+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39226]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@3b2d6e5 with state Busy
+2025-12-01T11:25:37.962+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39226]
+2025-12-01T11:25:37.962+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:25:37.962+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:37.962+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:37.962+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:37.963+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:37.965+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:37.965+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@2eaa0cbf]
+2025-12-01T11:25:37.965+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@2eaa0cbf]
+2025-12-01T11:25:37.965+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-12-01T11:25:37.965+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:37.967+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=a2d46bab-732f-476d-9e77-5f44c992e48a, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:25:37.967+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 84: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-12-01T11:25:37.967+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 84: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@65701c93
+2025-12-01T11:25:37.968+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 84: received class org.gradle.launcher.daemon.protocol.Finished
+2025-12-01T11:25:37.968+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 84: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6bb7ee4d
+2025-12-01T11:25:37.968+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@6bb7ee4d
+2025-12-01T11:25:37.969+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:25:37.969+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-12-01T11:25:37.969+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 84: received null
+2025-12-01T11:25:37.969+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 84: Received end-of-input from client.
+2025-12-01T11:25:37.969+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:25:38.529+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:25:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:25:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:46.056+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:39236 to /127.0.0.1:33221.
+2025-12-01T11:25:46.070+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 106: received class org.gradle.launcher.daemon.protocol.Build
+2025-12-01T11:25:46.070+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 106: Received non-IO message from client: Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:25:46.070+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}.
+2025-12-01T11:25:46.070+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia} with connection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39236.
+2025-12-01T11:25:46.070+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39236] after 0.13513333333333336 minutes of idle
+2025-12-01T11:25:46.070+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:46.070+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:25:46.071+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:25:46.071+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:25:46.072+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:25:46.072+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:25:46.072+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}. Dispatching build started information...
+2025-12-01T11:25:46.072+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 31: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1b20624d
+2025-12-01T11:25:46.072+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:25:46.072+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, GITHUB_REPOSITORY_OWNER, SWIFT_PATH, SGX_AESM_ADDR, GITHUB_REPOSITORY_ID, CHROMEWEBDRIVER, COPILOT_AGENT_SOURCE_ENVIRONMENT, DBUS_SESSION_BUS_ADDRESS, COPILOT_AGENT_ONLINE_EVALUATION_DISABLED, GITHUB_RUN_NUMBER, ANDROID_HOME, SUDO_USER, GITHUB_RETENTION_DAYS, GITHUB_WORKSPACE, GITHUB_API_URL, GITHUB_RUN_ATTEMPT, COPILOT_AGENT_INJECTED_SECRET_NAMES, GITHUB_UPLOADS_URL, COPILOT_FEATURE_FLAGS, PWD, COPILOT_AGENT_RUNTIME_VERSION, GITHUB_JOB, GITHUB_ACTIONS, COPILOT_AGENT_ACTION, DOTNET_MULTILEVEL_LOOKUP, SHOULD_CONTINUE, HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS, COPILOT_AGENT_BASE_COMMIT, RUNNER_ENVIRONMENT, ANDROID_NDK, GITHUB_ENV, GOROOT_1_24_X64, GITHUB_EVENT_PATH, GITHUB_REF_TYPE, GITHUB_ACTOR_ID, COPILOT_AGENT_CONTENT_FILTER_MODE, SHLVL, RUNNER_TOOL_CACHE, COPILOT_USE_SESSIONS, CPD_SAVE_TRAJECTORY_OUTPUT, GOROOT_1_23_X64, COPILOT_AGENT_PR_COMMIT_COUNT, GITHUB_SERVER_URL, JAVA_HOME, GITHUB_REF, MEMORY_PRESSURE_WATCH, RUNNER_NAME, BOOTSTRAP_HASKELL_NONINTERACTIVE, TERM, XDG_SESSION_ID, CAROOT, GRADLE_HOME, FIREWALL_RULESET_CONTENT, ANT_HOME, COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT, GITHUB_DOWNLOADS_URL, GRADLE_USER_HOME, GITHUB_OUTPUT, JAVA_HOME_17_X64, GITHUB_STEP_SUMMARY, GITHUB_REPOSITORY, NODE_EXTRA_CA_CERTS, COPILOT_AGENT_START_TIME_SEC, GITHUB_ACTION_REF, COPILOT_JOB_EVENT_TYPE, SUDO_UID, XDG_SESSION_CLASS, _, AZURE_EXTENSION_DIR, SSL_CERT_FILE, SSL_CERT_DIR, CI, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, DOTNET_SYSTEM_NET_DISABLEIPV6, RUNNER_ARCH, GITHUB_SHA, SUDO_COMMAND, COPILOT_AGENT_MCP_SERVER_TEMP, ImageOS, JAVA_HOME_25_X64, ImageVersion, ACCEPT_EULA, COPILOT_AGENT_FIREWALL_LOG_FILE, RUNNER_TRACKING_ID, RUNNER_WORKSPACE, INVOCATION_ID, COPILOT_AGENT_COMMIT_LOGIN, COPILOT_AGENT_TIMEOUT_MIN, GITHUB_REF_PROTECTED, EDGEWEBDRIVER, COPILOT_AGENT_BRANCH_NAME, GITHUB_WORKFLOW, CONDA, COPILOT_AGENT_DEBUG, COPILOT_EXPERIMENTS, SELENIUM_JAR_PATH, GITHUB_BASE_REF, PIPX_HOME, JOURNAL_STREAM, GITHUB_WORKFLOW_SHA, MAIL, COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST, GITHUB_PATH, ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE, GITHUB_EVENT_NAME, LOGNAME, GITHUB_TRIGGERING_ACTOR, CHROME_BIN, CURL_CA_BUNDLE, SHELL, AGENT_TOOLSDIRECTORY, GOROOT_1_25_X64, REQUESTS_CA_BUNDLE, ANDROID_NDK_HOME, ANDROID_NDK_ROOT, VCPKG_INSTALLATION_ROOT, GITHUB_GRAPHQL_URL, OLDPWD, ENABLE_RUNNER_TRACING, JAVA_HOME_21_X64, DOTNET_NOLOGO, RUNNER_OS, GITHUB_WORKFLOW_REF, DEBIAN_FRONTEND, POWERSHELL_DISTRIBUTION_CHANNEL, GITHUB_ACTION, GITHUB_ACTOR, SYSTEMD_EXEC_PID, PIPX_BIN_DIR, MEMORY_PRESSURE_WRITE, COPILOT_API_URL, COPILOT_AGENT_PR_NUMBER, COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST, JAVA_HOME_8_X64, GOROOT_1_22_X64, GECKOWEBDRIVER, LANG, GITHUB_REPOSITORY_OWNER_ID, XDG_SESSION_TYPE, COPILOT_MCP_ENABLED, COPILOT_AGENT_CALLBACK_URL, SUDO_GID, GHCUP_INSTALL_BASE_PREFIX, COPILOT_AGENT_ISSUE_NUMBER, GITHUB_STATE, GITHUB_REF_NAME, NVM_DIR, ANDROID_NDK_LATEST_HOME, BLACKBIRD_MODE, GITHUB_ACTION_REPOSITORY, HOMEBREW_NO_AUTO_UPDATE, COPILOT_AGENT_COMMIT_EMAIL, ANDROID_SDK_ROOT, GITHUB_RUN_ID, USER, XDG_CONFIG_HOME, RUNNER_TEMP, GITHUB_HEAD_REF, JAVA_HOME_11_X64, XDG_RUNTIME_DIR, HOME]
+2025-12-01T11:25:46.074+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-12-01T11:25:46.074+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3552). The daemon log file: /home/runner/work/Folia/Folia/gradlehome/daemon/8.14.3/daemon-3552.out.log
+2025-12-01T11:25:46.074+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 3rd build in daemon [uptime: 38.635 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 37% of 384 MiB]
+2025-12-01T11:25:46.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-12-01T11:25:46.075+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Calculating task graph as configuration cache cannot be reused because Gradle user home directory has changed.
+paperweight-patcher v2.0.0-beta.18 (running on 'Linux')
+paperweight-core v2.0.0-beta.18 (running on 'Linux')
+Applied 0 patches
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervmg1sw1.u1ap2i3zw00e3nek3vh4h3r4hd.bx.internal.cloudapp.net>) not allowed
+
+***   Please review above details and finish the apply then
+***   save the changes with `./gradlew rebuildPatches`
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':applyPaperApiFeaturePatches'.
+> io.papermc.paperweight.PaperweightException: Failed to apply patches
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 23s
+5 actionable tasks: 5 executed
+Configuration cache entry stored.
+2025-12-01T11:26:09.243+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-12-01T11:26:09.254+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39236]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@3b2d6e5 with state Busy
+2025-12-01T11:26:09.255+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:39236]
+2025-12-01T11:26:09.255+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:26:09.255+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:09.255+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:09.255+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:26:09.255+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:09.256+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:09.256+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@5ba7ce9c]
+2025-12-01T11:26:09.256+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:26:09.256+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@5ba7ce9c]
+2025-12-01T11:26:09.266+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-12-01T11:26:09.266+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=c10d686e-c2ca-4e3c-bc84-e05760a94dcd, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 106: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 106: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@589004f9
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 106: received class org.gradle.launcher.daemon.protocol.Finished
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 106: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@5657e19b
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@5657e19b
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:26:09.314+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-12-01T11:26:09.315+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 106: received null
+2025-12-01T11:26:09.315+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 106: Received end-of-input from client.
+2025-12-01T11:26:09.315+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:26:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:26:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:26:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:24.551+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:42752 to /127.0.0.1:33221.
+2025-12-01T11:26:24.566+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 146: received class org.gradle.launcher.daemon.protocol.Build
+2025-12-01T11:26:24.566+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 146: Received non-IO message from client: Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:26:24.566+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}.
+2025-12-01T11:26:24.566+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia} with connection: socket connection from /127.0.0.1:33221 to /127.0.0.1:42752.
+2025-12-01T11:26:24.566+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:42752] after 0.2551833333333333 minutes of idle
+2025-12-01T11:26:24.566+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:24.566+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:24.567+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:26:24.567+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:24.567+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:24.567+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:26:24.567+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:26:24.567+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}. Dispatching build started information...
+2025-12-01T11:26:24.568+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 31: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@2c293d2a
+2025-12-01T11:26:24.568+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, GITHUB_REPOSITORY_OWNER, SWIFT_PATH, SGX_AESM_ADDR, GITHUB_REPOSITORY_ID, CHROMEWEBDRIVER, COPILOT_AGENT_SOURCE_ENVIRONMENT, DBUS_SESSION_BUS_ADDRESS, COPILOT_AGENT_ONLINE_EVALUATION_DISABLED, GITHUB_RUN_NUMBER, ANDROID_HOME, SUDO_USER, GITHUB_RETENTION_DAYS, GITHUB_WORKSPACE, GITHUB_API_URL, GITHUB_RUN_ATTEMPT, COPILOT_AGENT_INJECTED_SECRET_NAMES, GITHUB_UPLOADS_URL, COPILOT_FEATURE_FLAGS, PWD, COPILOT_AGENT_RUNTIME_VERSION, GITHUB_JOB, GITHUB_ACTIONS, COPILOT_AGENT_ACTION, DOTNET_MULTILEVEL_LOOKUP, SHOULD_CONTINUE, HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS, COPILOT_AGENT_BASE_COMMIT, RUNNER_ENVIRONMENT, ANDROID_NDK, GITHUB_ENV, GOROOT_1_24_X64, GITHUB_EVENT_PATH, GITHUB_REF_TYPE, GITHUB_ACTOR_ID, COPILOT_AGENT_CONTENT_FILTER_MODE, SHLVL, RUNNER_TOOL_CACHE, COPILOT_USE_SESSIONS, CPD_SAVE_TRAJECTORY_OUTPUT, GOROOT_1_23_X64, COPILOT_AGENT_PR_COMMIT_COUNT, GITHUB_SERVER_URL, JAVA_HOME, GITHUB_REF, MEMORY_PRESSURE_WATCH, RUNNER_NAME, BOOTSTRAP_HASKELL_NONINTERACTIVE, TERM, XDG_SESSION_ID, CAROOT, GRADLE_HOME, FIREWALL_RULESET_CONTENT, ANT_HOME, COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT, GITHUB_DOWNLOADS_URL, GRADLE_USER_HOME, GITHUB_OUTPUT, JAVA_HOME_17_X64, GITHUB_STEP_SUMMARY, GITHUB_REPOSITORY, NODE_EXTRA_CA_CERTS, COPILOT_AGENT_START_TIME_SEC, GITHUB_ACTION_REF, COPILOT_JOB_EVENT_TYPE, SUDO_UID, XDG_SESSION_CLASS, _, AZURE_EXTENSION_DIR, SSL_CERT_FILE, SSL_CERT_DIR, CI, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, DOTNET_SYSTEM_NET_DISABLEIPV6, RUNNER_ARCH, GITHUB_SHA, SUDO_COMMAND, COPILOT_AGENT_MCP_SERVER_TEMP, ImageOS, JAVA_HOME_25_X64, ImageVersion, ACCEPT_EULA, COPILOT_AGENT_FIREWALL_LOG_FILE, RUNNER_TRACKING_ID, RUNNER_WORKSPACE, INVOCATION_ID, COPILOT_AGENT_COMMIT_LOGIN, COPILOT_AGENT_TIMEOUT_MIN, GITHUB_REF_PROTECTED, EDGEWEBDRIVER, COPILOT_AGENT_BRANCH_NAME, GITHUB_WORKFLOW, CONDA, COPILOT_AGENT_DEBUG, COPILOT_EXPERIMENTS, SELENIUM_JAR_PATH, GITHUB_BASE_REF, PIPX_HOME, JOURNAL_STREAM, GITHUB_WORKFLOW_SHA, MAIL, COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST, GITHUB_PATH, ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE, GITHUB_EVENT_NAME, LOGNAME, GITHUB_TRIGGERING_ACTOR, CHROME_BIN, CURL_CA_BUNDLE, SHELL, AGENT_TOOLSDIRECTORY, GOROOT_1_25_X64, REQUESTS_CA_BUNDLE, ANDROID_NDK_HOME, ANDROID_NDK_ROOT, VCPKG_INSTALLATION_ROOT, GITHUB_GRAPHQL_URL, OLDPWD, ENABLE_RUNNER_TRACING, JAVA_HOME_21_X64, DOTNET_NOLOGO, RUNNER_OS, GITHUB_WORKFLOW_REF, DEBIAN_FRONTEND, POWERSHELL_DISTRIBUTION_CHANNEL, GITHUB_ACTION, GITHUB_ACTOR, SYSTEMD_EXEC_PID, PIPX_BIN_DIR, MEMORY_PRESSURE_WRITE, COPILOT_API_URL, COPILOT_AGENT_PR_NUMBER, COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST, JAVA_HOME_8_X64, GOROOT_1_22_X64, GECKOWEBDRIVER, LANG, GITHUB_REPOSITORY_OWNER_ID, XDG_SESSION_TYPE, COPILOT_MCP_ENABLED, COPILOT_AGENT_CALLBACK_URL, SUDO_GID, GHCUP_INSTALL_BASE_PREFIX, COPILOT_AGENT_ISSUE_NUMBER, GITHUB_STATE, GITHUB_REF_NAME, NVM_DIR, ANDROID_NDK_LATEST_HOME, BLACKBIRD_MODE, GITHUB_ACTION_REPOSITORY, HOMEBREW_NO_AUTO_UPDATE, COPILOT_AGENT_COMMIT_EMAIL, ANDROID_SDK_ROOT, GITHUB_RUN_ID, USER, XDG_CONFIG_HOME, RUNNER_TEMP, GITHUB_HEAD_REF, JAVA_HOME_11_X64, XDG_RUNTIME_DIR, HOME]
+2025-12-01T11:26:24.569+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-12-01T11:26:24.569+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3552). The daemon log file: /home/runner/work/Folia/Folia/gradlehome/daemon/8.14.3/daemon-3552.out.log
+2025-12-01T11:26:24.569+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 4th build in daemon [uptime: 1 mins 17.13 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 39% of 384 MiB]
+2025-12-01T11:26:24.570+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-12-01T11:26:24.570+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Reusing configuration cache.
+Applied 0 patches
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervmg1sw1.u1ap2i3zw00e3nek3vh4h3r4hd.bx.internal.cloudapp.net>) not allowed
+
+***   Please review above details and finish the apply then
+***   save the changes with `./gradlew rebuildPatches`
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':applyPaperApiFeaturePatches'.
+> io.papermc.paperweight.PaperweightException: Failed to apply patches
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+5 actionable tasks: 3 executed, 2 up-to-date
+Configuration cache entry reused.
+2025-12-01T11:26:29.158+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-12-01T11:26:29.160+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:42752]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@3b2d6e5 with state Busy
+2025-12-01T11:26:29.160+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:42752]
+2025-12-01T11:26:29.160+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:26:29.161+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:29.161+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:29.161+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:26:29.161+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:29.162+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:29.162+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@7a2dc255]
+2025-12-01T11:26:29.162+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@7a2dc255]
+2025-12-01T11:26:29.162+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:26:29.163+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-12-01T11:26:29.164+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=90214b07-57e9-40fd-afc3-ef5fec39ceae, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:26:29.208+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 146: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-12-01T11:26:29.208+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 146: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@72354aad
+2025-12-01T11:26:29.209+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 146: received class org.gradle.launcher.daemon.protocol.Finished
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 146: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7cf2aa9b
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@7cf2aa9b
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 146: received null
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 146: Received end-of-input from client.
+2025-12-01T11:26:29.210+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:42.688+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:36212 to /127.0.0.1:33221.
+2025-12-01T11:26:42.702+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 165: received class org.gradle.launcher.daemon.protocol.Build
+2025-12-01T11:26:42.702+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 165: Received non-IO message from client: Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:26:42.702+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}.
+2025-12-01T11:26:42.702+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia} with connection: socket connection from /127.0.0.1:33221 to /127.0.0.1:36212.
+2025-12-01T11:26:42.703+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:36212] after 0.22569999999999998 minutes of idle
+2025-12-01T11:26:42.703+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:42.703+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:26:42.703+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:26:42.703+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:26:42.704+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:26:42.704+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:26:42.704+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:26:42.704+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}. Dispatching build started information...
+2025-12-01T11:26:42.704+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 31: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@7613329f
+2025-12-01T11:26:42.705+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, GITHUB_REPOSITORY_OWNER, SWIFT_PATH, SGX_AESM_ADDR, GITHUB_REPOSITORY_ID, CHROMEWEBDRIVER, COPILOT_AGENT_SOURCE_ENVIRONMENT, DBUS_SESSION_BUS_ADDRESS, COPILOT_AGENT_ONLINE_EVALUATION_DISABLED, GITHUB_RUN_NUMBER, ANDROID_HOME, SUDO_USER, GITHUB_RETENTION_DAYS, GITHUB_WORKSPACE, GITHUB_API_URL, GITHUB_RUN_ATTEMPT, COPILOT_AGENT_INJECTED_SECRET_NAMES, GITHUB_UPLOADS_URL, COPILOT_FEATURE_FLAGS, PWD, COPILOT_AGENT_RUNTIME_VERSION, GITHUB_JOB, GITHUB_ACTIONS, COPILOT_AGENT_ACTION, DOTNET_MULTILEVEL_LOOKUP, SHOULD_CONTINUE, HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS, COPILOT_AGENT_BASE_COMMIT, RUNNER_ENVIRONMENT, ANDROID_NDK, GITHUB_ENV, GOROOT_1_24_X64, GITHUB_EVENT_PATH, GITHUB_REF_TYPE, GITHUB_ACTOR_ID, COPILOT_AGENT_CONTENT_FILTER_MODE, SHLVL, RUNNER_TOOL_CACHE, COPILOT_USE_SESSIONS, CPD_SAVE_TRAJECTORY_OUTPUT, GOROOT_1_23_X64, COPILOT_AGENT_PR_COMMIT_COUNT, GITHUB_SERVER_URL, JAVA_HOME, GITHUB_REF, MEMORY_PRESSURE_WATCH, RUNNER_NAME, BOOTSTRAP_HASKELL_NONINTERACTIVE, TERM, XDG_SESSION_ID, CAROOT, GRADLE_HOME, FIREWALL_RULESET_CONTENT, ANT_HOME, COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT, GITHUB_DOWNLOADS_URL, GRADLE_USER_HOME, GITHUB_OUTPUT, JAVA_HOME_17_X64, GITHUB_STEP_SUMMARY, GITHUB_REPOSITORY, NODE_EXTRA_CA_CERTS, COPILOT_AGENT_START_TIME_SEC, GITHUB_ACTION_REF, COPILOT_JOB_EVENT_TYPE, SUDO_UID, XDG_SESSION_CLASS, _, AZURE_EXTENSION_DIR, SSL_CERT_FILE, SSL_CERT_DIR, CI, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, DOTNET_SYSTEM_NET_DISABLEIPV6, RUNNER_ARCH, GITHUB_SHA, SUDO_COMMAND, COPILOT_AGENT_MCP_SERVER_TEMP, ImageOS, JAVA_HOME_25_X64, ImageVersion, ACCEPT_EULA, COPILOT_AGENT_FIREWALL_LOG_FILE, RUNNER_TRACKING_ID, RUNNER_WORKSPACE, INVOCATION_ID, COPILOT_AGENT_COMMIT_LOGIN, COPILOT_AGENT_TIMEOUT_MIN, GITHUB_REF_PROTECTED, EDGEWEBDRIVER, COPILOT_AGENT_BRANCH_NAME, GITHUB_WORKFLOW, CONDA, COPILOT_AGENT_DEBUG, COPILOT_EXPERIMENTS, SELENIUM_JAR_PATH, GITHUB_BASE_REF, PIPX_HOME, JOURNAL_STREAM, GITHUB_WORKFLOW_SHA, MAIL, COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST, GITHUB_PATH, ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE, GITHUB_EVENT_NAME, LOGNAME, GITHUB_TRIGGERING_ACTOR, CHROME_BIN, CURL_CA_BUNDLE, SHELL, AGENT_TOOLSDIRECTORY, GOROOT_1_25_X64, REQUESTS_CA_BUNDLE, ANDROID_NDK_HOME, ANDROID_NDK_ROOT, VCPKG_INSTALLATION_ROOT, GITHUB_GRAPHQL_URL, OLDPWD, ENABLE_RUNNER_TRACING, JAVA_HOME_21_X64, DOTNET_NOLOGO, RUNNER_OS, GITHUB_WORKFLOW_REF, DEBIAN_FRONTEND, POWERSHELL_DISTRIBUTION_CHANNEL, GITHUB_ACTION, GITHUB_ACTOR, SYSTEMD_EXEC_PID, PIPX_BIN_DIR, MEMORY_PRESSURE_WRITE, COPILOT_API_URL, COPILOT_AGENT_PR_NUMBER, COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST, JAVA_HOME_8_X64, GOROOT_1_22_X64, GECKOWEBDRIVER, LANG, GITHUB_REPOSITORY_OWNER_ID, XDG_SESSION_TYPE, COPILOT_MCP_ENABLED, COPILOT_AGENT_CALLBACK_URL, SUDO_GID, GHCUP_INSTALL_BASE_PREFIX, COPILOT_AGENT_ISSUE_NUMBER, GITHUB_STATE, GITHUB_REF_NAME, NVM_DIR, ANDROID_NDK_LATEST_HOME, BLACKBIRD_MODE, GITHUB_ACTION_REPOSITORY, HOMEBREW_NO_AUTO_UPDATE, COPILOT_AGENT_COMMIT_EMAIL, ANDROID_SDK_ROOT, GITHUB_RUN_ID, USER, XDG_CONFIG_HOME, RUNNER_TEMP, GITHUB_HEAD_REF, JAVA_HOME_11_X64, XDG_RUNTIME_DIR, HOME]
+2025-12-01T11:26:42.706+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-12-01T11:26:42.706+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3552). The daemon log file: /home/runner/work/Folia/Folia/gradlehome/daemon/8.14.3/daemon-3552.out.log
+2025-12-01T11:26:42.706+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 5th build in daemon [uptime: 1 mins 35.267 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 39% of 384 MiB]
+2025-12-01T11:26:42.706+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-12-01T11:26:42.707+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=e9832d58-8b15-4a39-8397-59f1147bc5b5,javaHome=/usr/lib/jvm/temurin-21-jdk-amd64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/runner/work/Folia/Folia/gradlehome/daemon,pid=3552,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Reusing configuration cache.
+Applied 0 patches
+paperweight-patcher v2.0.0-beta.18 (running on 'Linux')
+paperweight-core v2.0.0-beta.18 (running on 'Linux')
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':Folia:folia-server:downloadMcManifest'.
+> java.net.UnknownHostException: piston-meta.mojang.com
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 18s
+6 actionable tasks: 4 executed, 2 up-to-date
+Configuration cache entry reused.
+2025-12-01T11:27:00.911+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-12-01T11:27:00.913+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:36212]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@3b2d6e5 with state Busy
+2025-12-01T11:27:00.913+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:33221 to /127.0.0.1:36212]
+2025-12-01T11:27:00.913+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-12-01T11:27:00.913+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:27:00.913+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [03f92f28-643d-48df-9219-68675ef1a031 port:33221, addresses:[localhost/127.0.0.1]]
+2025-12-01T11:27:00.914+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-12-01T11:27:00.914+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:00.914+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:00.915+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-12-01T11:27:00.915+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@48616f47]
+2025-12-01T11:27:00.915+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@48616f47]
+2025-12-01T11:27:00.916+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-12-01T11:27:00.916+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=4f13f6c4-9972-4ac5-8176-bf4956345d55, currentDir=/home/runner/work/Folia/Folia}
+2025-12-01T11:27:00.949+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 165: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-12-01T11:27:00.949+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 165: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@1779ef08
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 165: received class org.gradle.launcher.daemon.protocol.Finished
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 165: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@19be0397
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 165: received null
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 165: Received end-of-input from client.
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@19be0397
+2025-12-01T11:27:00.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:27:00.951+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: stopping connection
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:27:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:27:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:27:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:08.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:08.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:08.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:08.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:08.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:18.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:18.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:28.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:28.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:38.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:38.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:48.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:48.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:58.530+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-12-01T11:28:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-12-01T11:28:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-12-01T11:28:58.531+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

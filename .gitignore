@@ -1,0 +1,6 @@
+# Gradle configuration cache and build outputs
+.gradle/configuration-cache/
+build/reports/
+folia-server/.gradle/
+paper-server/
+paper-api/
