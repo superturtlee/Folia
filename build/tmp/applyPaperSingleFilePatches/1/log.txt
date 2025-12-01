@@ -1,4 +1,0 @@
-[DEBUG] Patching: paper-api/build.gradle.kts
-[DEBUG]  Hunk 0: EXACT: @@ -99,6 +99,18 @@
-[DEBUG]  Hunk 1: EXACT: @@ -165,7 +177,7 @@
-[DEBUG]  Hunk 2: EXACT: @@ -198,11 +210,11 @@
